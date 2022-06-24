@@ -24,9 +24,7 @@ object Executor:
         .as(KVState(Map.empty))
         .liftTo[F](new Throwable("Unsupported hash!"))
 
-
   private final case class KVState(getAll: Map[String, String]) extends SystemState
-
 
 trait SystemState:
   def getAll: Map[String, String]
