@@ -25,4 +25,4 @@ object Build:
 
 final case class Hash(value: Array[Byte]) derives Codec.AsObject
 
-final case class SystemState(getAll: Map[String, String]) derives Codec.AsObject
+final case class SystemState(all: Map[String, String]) derives Codec.AsObject

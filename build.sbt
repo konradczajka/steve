@@ -13,8 +13,8 @@ val commonSettings = Seq(
 val shared = project.settings(
   commonSettings,
   libraryDependencies ++= Seq(
-    "com.softwaremill.sttp.tapir" %% "tapir-core" % "0.20.0",
-    "com.softwaremill.sttp.tapir" %% "tapir-json-circe" % "0.20.0"
+    "com.softwaremill.sttp.tapir" %% "tapir-core" % "1.0.1",
+    "com.softwaremill.sttp.tapir" %% "tapir-json-circe" % "1.0.1"
   )
 )
 
@@ -22,7 +22,7 @@ val server = project
   .settings(
     commonSettings,
     libraryDependencies ++= Seq(
-      "com.softwaremill.sttp.tapir" %% "tapir-http4s-server" % "0.20.0",
+      "com.softwaremill.sttp.tapir" %% "tapir-http4s-server" % "1.0.1",
       "org.http4s" %% "http4s-dsl" % "0.23.13",
       "org.http4s" %% "http4s-ember-server" % "0.23.13"
     )
